@@ -12,11 +12,15 @@ public class Square {
     return sides;
   }
 
+  public String getLabel() {
+    return label;
+  }
+
   @Override
   public String toString() {
     String str = "Square{" +
                  "sides=" + sides +
-                 ", label='" + sides + '\'' +
+                 ", label='" + label + '\'' +
                  '}';
     return str;
   }
