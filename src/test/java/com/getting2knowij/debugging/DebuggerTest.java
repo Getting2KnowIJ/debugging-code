@@ -34,7 +34,31 @@ public class DebuggerTest {
     assertEquals(4, wheels.size());
   }
 
+  @Test
+  void shouldBeAbleToViewAllFieldsInDebugWindow() {
+    // given
+    Car car = getCar();
+    addWheelsToCar(car);
+
+    // when
+    List<Wheel> wheels = car.getWheels();
+
+    // then
+    assertEquals(4, wheels.size());
+  }
+
   //<editor-fold desc="Helper methods">
+  private static void addWheelsToCar(Car car) {
+    Wheel wheel1 = new Wheel();
+    car.addWheel(0, wheel1);
+    Wheel wheel2 = new Wheel();
+    car.addWheel(1, wheel2);
+    Wheel wheel3 = new Wheel();
+    car.addWheel(2, wheel3);
+    Wheel wheel4 = new Wheel();
+    car.addWheel(3, wheel4);
+  }
+
   private Car getCar() {
     return new Car();
   }

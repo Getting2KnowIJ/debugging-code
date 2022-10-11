@@ -1,10 +1,9 @@
 package com.getting2knowij.debugging.car;
 
 public class Wheel {
-  public Wheel() {
-  }
+  private final Tyre tyre = new Tyre();
 
   public Tyre getTyre() {
-    return new Tyre();
+    return tyre;
   }
 }
