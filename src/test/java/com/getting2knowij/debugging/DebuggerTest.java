@@ -60,7 +60,7 @@ public class DebuggerTest {
   }
 
   private Car getCar() {
-    return new Car();
+    return new Car("Ford", "Fiesta");
   }
   //</editor-fold>
 }
