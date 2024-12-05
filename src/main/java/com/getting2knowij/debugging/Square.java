@@ -2,7 +2,7 @@ package com.getting2knowij.debugging;
 
 public class Square {
   private final int sides = 4;
-  private final String label;
+  private String label;
 
   public Square(String label) {
     this.label = label;

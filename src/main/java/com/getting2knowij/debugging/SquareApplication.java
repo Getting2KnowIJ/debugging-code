@@ -4,8 +4,8 @@ public class SquareApplication {
   public static void main(String[] args) {
     Square square = new Square("Square for running");
 
-    String name = square.getLabel();
+    String squareDetails = square.toString();
 
-    System.out.println(name);
+    System.out.println(squareDetails);
   }
 }
